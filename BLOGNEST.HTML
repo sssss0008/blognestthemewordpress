@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogNest - Personal Blog Theme</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header .logo a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .featured-posts {
+            padding: 2rem 0;
+        }
+
+        .featured-posts h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .posts {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .post {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+
+        .post h3 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+        .post p {
+            padding: 0 0.5rem 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .post a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer ul li {
+            display: inline;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* Dark mode toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            color: #333;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: #f9f9f9;
+        }
+
+        .dark-mode header,
+        .dark-mode footer {
+            background: #222;
+            color: #fff;
+        }
+
+        .dark-mode .post {
+            background: #444;
+            color: #fff;
+            border-color: #555;
+        }
+
+        .dark-mode nav ul li a {
+            color: #ccc;
+        }
+
+        .dark-mode .dark-mode-toggle {
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-mode-toggle">Toggle Dark Mode</button>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">BlogNest</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to BlogNest</h1>
+            <p>Your space to share stories, thoughts, and ideas.</p>
+        </div>
+    </section>
+
+    <section class="featured-posts">
+        <div class="container">
+            <h2>Featured Posts</h2>
+            <div class="posts">
+                <div class="post">
+                    <img src="https://via.placeholder.com/300" alt="Post Thumbnail">
+                    <h3><a href="#">Post Title 1</a></h3>
+                    <p>Short description of the blog post goes here...</p>
+                </div>
+                <div class="post">
+                    <img src="https://via.placeholder.com/300" alt="Post Thumbnail">
+                    <h3><a href="#">Post Title 2</a></h3>
+                    <p>Short description of the blog post goes here...</p>
+                </div>
+                <div class="post">
+                    <img src="https://via.placeholder.com/300" alt="Post Thumbnail">
+                    <h3><a href="#">Post Title 3</a></h3>
+                    <p>Short description of the blog post goes here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BlogNest. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.querySelector('.dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
